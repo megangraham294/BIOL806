@@ -1,0 +1,31 @@
+---
+title: "Final Project"
+author: "Megan Graham"
+format: pdf
+editor: source
+bibliography: references.bib
+csl: the-journal-of-wildlife-management.csl
+---
+
+## Abstract
+
+## Intro
+
+
+
+## Methods
+```{r, warning = FALSE, echo = FALSE, message = FALSE}
+#| label: fig-species-flipper #use tbl for tables
+#| fig-cap: "Relative flipper size by species."
+library(palmerpenguins)
+data("penguins")
+library(tidyverse)
+
+ggplot(penguins, aes(x = species, y = flipper_length_mm)) + 
+  geom_point()
+```
+## Results
+
+We can see how flipper length changes in species (@fig-species-flipper). 
+
+## References
